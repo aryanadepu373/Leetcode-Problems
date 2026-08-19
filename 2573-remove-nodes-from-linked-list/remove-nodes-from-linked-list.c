@@ -27,9 +27,7 @@ struct ListNode* reverse(struct ListNode* head){
 struct ListNode* removeNodes(struct ListNode* head) {
     int stack[100001],top=-1;
     struct ListNode *temp;
-    if(head->next==NULL || head==NULL){
-        return head;
-    }
+    
     temp=reverse(head);
     while(temp!=NULL){
         if(top!=-1){
