@@ -6,6 +6,9 @@
  * };
  */
 struct ListNode* swapNodes(struct ListNode* head, int k) {
+    if(head==NULL){
+        return head;
+    }
     struct ListNode* ptr1,*ptr2,*temp;
     temp=head;
     int count=0;
